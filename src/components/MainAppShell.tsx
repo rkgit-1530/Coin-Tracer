@@ -130,7 +130,7 @@ const MainAppShell = () => {
                     }}
                   >
                     <CgCalculator />
-                    <Text ml={10}>Expense Tracker App</Text>
+                    <Text ml={10}>Coin Tracer</Text>
                   </div>
                   <DarkLightThemeButton />
                 </div>
