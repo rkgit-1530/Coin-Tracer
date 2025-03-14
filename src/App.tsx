@@ -4,6 +4,7 @@ import MainAppShell from "./components/MainAppShell";
 import { AvailableCategoriesContextProvider } from "./store/AvailableCategoriesContext";
 import { CategoriesContextProvider } from "./store/CategoriesContext";
 import { HistoryContextProvider } from "./store/HistoryContext";
+import { AuthProvider } from "./store/AuthContext";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
     >
       <Paper>
         {/* Contexts */}
+        <AuthProvider>
         <AvailableCategoriesContextProvider>
           <HistoryContextProvider>
             <CategoriesContextProvider>
@@ -24,6 +26,7 @@ export default function App() {
             </CategoriesContextProvider>
           </HistoryContextProvider>
         </AvailableCategoriesContextProvider>
+        </AuthProvider>
       </Paper>
     </MantineProvider>
   );
