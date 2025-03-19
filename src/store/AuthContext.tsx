@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { User, onAuthStateChanged, signInWithEmailAndPassword, signOut, createUserWithEmailAndPassword } from "firebase/auth";
-import {auth } from '../firebase/firebase'
-
+import { auth } from "../firebase/firebase";
 // Define the context type
 interface AuthContextType {
   user: User | null;
